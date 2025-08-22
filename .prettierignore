@@ -1,0 +1,12 @@
+node_modules
+.next
+build
+dist
+out
+.next-env.d.ts
+
+package.json
+package-lock.json
+next.config.ts
+postcss.config.mjs
+tsconfig.json
