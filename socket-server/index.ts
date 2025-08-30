@@ -49,7 +49,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = 4001;
+const PORT = 4000;
 httpServer.listen(PORT, () => {
   console.log(`🎨 Socket.IO server running on http://localhost:${PORT}`);
 });

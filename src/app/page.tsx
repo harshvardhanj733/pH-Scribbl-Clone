@@ -13,14 +13,6 @@ export default function HomePage() {
   const handleCreateRoom = () => {
     if (!username) return alert("Please enter your name");
     const newRoomId = uuidv4(); // generate unique room ID
-    // localStorage.setItem(
-    //   "user",
-    //   JSON.stringify({
-    //     userId: uuidv4(),
-    //     username,
-    //     isHost: true,
-    //   })
-    // );
     setUserWithExpiry({id: uuidv4(), username, isHost: true});
     router.push(`/room/${newRoomId}`);
   };
@@ -28,14 +20,6 @@ export default function HomePage() {
   const handleJoinRoom = () => {
     if (!username) return alert("Please enter your name");
     if (!roomCode) return alert("Please enter a room code");
-    // localStorage.setItem(
-    //   "user",
-    //   JSON.stringify({
-    //     userId: uuidv4(),
-    //     username,
-    //     isHost: false,
-    //   })
-    // );
     setUserWithExpiry({id: uuidv4(), username, isHost: false});
     router.push(`/room/${roomCode}`);
   };

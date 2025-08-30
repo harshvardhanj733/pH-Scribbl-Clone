@@ -11,7 +11,7 @@ export const useSocket = () => {
   useEffect(() => {
     // connect only once
     if (!socket) {
-      socket = io("http://localhost:4001", {
+      socket = io("http://localhost:4000", {
         transports: ["websocket"],
       });
     }
