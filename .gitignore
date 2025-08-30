@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#socket-server
+/socket-server/node_modules
+/socket-server/dist
+/socket-server/.env.local
+/socket-server/package-lock.json
