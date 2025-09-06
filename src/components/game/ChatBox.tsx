@@ -1,9 +1,7 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useSocket } from "@/hooks/useSocket";
-import { getUserWithExpiry } from "@/lib/getUserWithExpiry";
 import { useRouter } from "next/navigation";
 import User from "@/types/User";
 
@@ -58,7 +56,6 @@ export default function Chat({id, user}:{id:string, user:User}) {
 
   return (
     <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Room ID: {id}</h1>
       <p className="mb-2">
         Status:{" "}
         <span className={isConnected ? "text-green-600" : "text-red-600"}>
